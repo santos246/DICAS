@@ -20,7 +20,6 @@
 <!----------------------------------------------------------------------------------------------------->
 
 <!----------------------------------------------------------------------------------------------------->
-
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,15 +29,12 @@
   position: relative;
   font-family: Arial;
 }
-
 .custom-select select {
   display: none; /*hide original SELECT element:*/
 }
-
 .select-selected {
   background-color: DodgerBlue;
 }
-
 /*style the arrow inside the select element:*/
 .select-selected:after {
   position: absolute;
@@ -50,23 +46,20 @@
   border: 6px solid transparent;
   border-color: #fff transparent transparent transparent;
 }
-
 /*point the arrow upwards when the select box is open (active):*/
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent #fff transparent;
   top: 7px;
 }
-
 /*style the items (options), including the selected item:*/
 .select-items div,.select-selected {
   color: #ffffff;
-  padding: 8px 16px;
-  border: 1px solid transparent;
+  padding: 10px 18px;
+  border: 2px solid transparent;
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
   cursor: pointer;
   user-select: none;
 }
-
 /*style items (options):*/
 .select-items {
   position: absolute;
@@ -76,26 +69,25 @@
   right: 0;
   z-index: 99;
 }
-
 /*hide the items when the select box is closed:*/
 .select-hide {
   display: none;
 }
-
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
 }
 </style>
 </head>     
-
 <body>
 
 <h2>BEM VINDO</h2>
 
 <!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
-<div class="custom-select" style="width:80%;">
-  <select>
-    <option value="0">Select car:</option>
+<div class="custom-select" style="width:60%;">
+<select>
+ 
+    <option value="0">CATEGORIAS:</option>
+
     <option value="1">Audi</option>
     <option value="2">BMW</option>
     <option value="3">Citroen</option>
@@ -134,9 +126,8 @@
     <option value="12">Volvo</option>
 
 
-  </select>
+</select>
 </div>
-
 <script>
 var x, i, j, l, ll, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select":*/
@@ -217,7 +208,6 @@ function closeAllSelect(elmnt) {
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
 </script>
-
 </body>
 </html>
 
@@ -228,6 +218,9 @@ document.addEventListener("click", closeAllSelect);
 </center>
 <!----------------------------------------------------------------------------------------------------->
 
+
+
+
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -235,7 +228,6 @@ document.addEventListener("click", closeAllSelect);
 * {
   box-sizing: border-box;
 }
-
 #myInput {
   background-image: url('/css/searchicon.png');
   background-position: 10px 12px;
@@ -246,13 +238,11 @@ document.addEventListener("click", closeAllSelect);
   border: 1px solid #ddd;
   margin-bottom: 12px;
 }
-
 #myUL {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-
 #myUL li a {
   border: 1px solid #ddd;
   margin-top: -1px; /* Prevent double borders */
@@ -263,7 +253,6 @@ document.addEventListener("click", closeAllSelect);
   color: black;
   display: block
 }
-
 #myUL li a:hover:not(.header) {
   background-color: #eee;
 }
@@ -271,11 +260,9 @@ document.addEventListener("click", closeAllSelect);
 </head>
 <body>
 
-<h2>My Phonebook</h2>
-
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-
 <ul id="myUL">
+
   <li><a href="#">Adele</a></li>
   <li><a href="#">Agnes</a></li>
 
